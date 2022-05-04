@@ -50,7 +50,8 @@ const HomeScreen = () => {
             }
 
             // if a device is detected add the device to the list by dispatching the action into the reducer
-            if (scannedDevice?.name?.toLocaleLowerCase().includes("redmi")) {
+            if (scannedDevice?.name?.toLocaleLowerCase().includes("")) {
+                //ime uređaja ovde
                 if (scannedDevice?.rssi) {
                     const distance = Math.pow(10, (-69 - scannedDevice?.rssi) / 20);
                     console.log("Distance: " + distance + "m");
